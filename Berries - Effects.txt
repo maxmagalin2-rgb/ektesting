@@ -1,0 +1,44 @@
+Berry JuiceRestores 20 HP when at 1/2 max HP or less. Single use.
+Aguav BerryRestores 1/3 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.
+Apicot BerryRaises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.
+Aspear BerryHolder is cured if it is frozen. Single use.
+Belue BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Bluk BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Cheri BerryHolder cures itself if it is paralyzed. Single use.
+Chesto BerryHolder wakes up if it is asleep. Single use.
+Cornn BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Durin BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Enigma BerryNo competitive use.
+Figy BerryRestores 1/3 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.
+Ganlon BerryRaises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.
+Grepa BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Hondew BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Iapapa BerryRestores 1/3 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.
+Kelpsy BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Lansat BerryHolder gains the Focus Energy effect when at 1/4 max HP or less. Single use.
+Leppa BerryRestores 10 PP to the first of the holder's moves to reach 0 PP. Single use.
+Liechi BerryRaises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.
+Lum BerryHolder cures itself if it has a non-volatile status or is confused. Single use.
+Mago BerryRestores 1/3 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.
+Magost BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Nanab BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Nomel BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Oran BerryRestores 10 HP when at 1/2 max HP or less. Single use.
+Pamtre BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Pecha BerryHolder is cured if it is poisoned. Single use.
+Persim BerryHolder is cured if it is confused. Single use.
+Petaya BerryRaises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.
+Pinap BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Pomeg BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Qualot BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Rabuta BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Rawst BerryHolder is cured if it is burned. Single use.
+Razz BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Salac BerryRaises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.
+Sitrus BerryRestores 30 HP when at 1/2 max HP or less. Single use.
+Spelon BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Starf BerryRaises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.
+Tamato BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Watmel BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Wepear BerryCannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.
+Wiki BerryRestores 1/3 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.
