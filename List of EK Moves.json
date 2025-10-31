@@ -1,0 +1,2165 @@
+[
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "User recovers 50% of the damage dealt."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "10% chance to lower the foe(s) Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Defense by 2."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n32",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Speed by 2."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n25",
+    "col (8)": "High critical hit ratio. Hits adjacent foes."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Sp. Def by 2."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "10% chance to raise all stats by 1 (not acc/eva)."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n2",
+    "col (8)": "Cures the user's party of all status conditions."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n32",
+    "col (8)": "Uses a random move known by a team member."
+  },
+  {
+    "col (2)": "Power\n30",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "A target of the opposite gender gets infatuated."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "10% chance to lower the target's Attack by 1."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n20",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Defense by 2."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n40",
+    "col (8)": "User switches, passing stat changes and more."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "All healthy allies aid in damaging the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "User loses 50% max HP. Maximizes Attack."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Waits 2 turns; deals double the damage taken."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Traps and damages the target for 4-5 turns."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "User cannot move next turn."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "High critical hit ratio. 30% chance to burn."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n8",
+    "col (8)": "10% chance to freeze foe(s)."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Prevents the target from switching out."
+  },
+  {
+    "col (2)": "Power\n85",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "30% chance to paralyze the target."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n20",
+    "col (8)": "10% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Hits 2 times in one turn."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n85",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n5",
+    "col (8)": "Bounces turn 1. Hits turn 2. 30% paralyze."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "Destroys screens, unless the target is immune."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "10% chance to lower the foe(s) Speed by 1."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "10% chance to lower the target's Speed by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Attack and Defense by 1."
+  },
+  {
+    "col (2)": "Power\n25",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Hits 2 times in one turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Sp. Atk and Sp. Def by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "Changes user's type by terrain (default Normal)."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "The user's Electric attack next turn has 2x power."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's Attack by 2."
+  },
+  {
+    "col (2)": "Power\n35",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Traps and damages the target for 4-5 turns."
+  },
+  {
+    "col (2)": "Power\n18",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n15",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Accuracy\n100%",
+    "col (4)": "PP\n10",
+    "col (6)": "Confuses the target."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "10% chance to confuse the target."
+  },
+  {
+    "col (2)": "Power\n10",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "10% chance to lower the target's Speed by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n30",
+    "col (8)": "Changes user's type to match its first move."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n30",
+    "col (8)": "Changes user's type to resist target's last move."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n6",
+    "col (8)": "Raises the user's Defense and Sp. Def by 1."
+  },
+  {
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n40",
+    "col (8)": "Lowers the target's Speed by 2."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "If hit by physical attack, returns double damage."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n40",
+    "col (8)": "If the user has no item, it steals the target's."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n8",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "20% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "50% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n6",
+    "col (8)": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "Raises the user's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "If an opponent knocks out the user, it also faints."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Prevents moves from affecting the user this turn."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Digs underground turn 1, strikes turn 2."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "For 2-5 turns, disables the target's last move."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10"
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "30% chance to confuse the target."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n5",
+    "col (8)": "Hits two turns after being used."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (2)": "Power\n30",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Hits 2 times in one turn."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n10",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n6",
+    "col (8)": "Raises the user's evasiveness by 1."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "30% chance to paralyze the target."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Attack and Speed by 1."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Deals 40 HP of damage to the target."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "User gains 1/2 HP inflicted. Sleeping target only."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n50%",
+    "col (6)": "PP\n5",
+    "col (8)": "100% chance to confuse the target."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Hits adjacent Pokemon. Power doubles on Dig."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "10% chance to burn the target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "The target repeats its last move for 2-6 turns."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's HP to the user's HP."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "User survives attacks this turn with at least 1 HP."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Less power as user's HP decreases. Hits foe(s)."
+  },
+  {
+    "col (2)": "Power\n250",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Hits adjacent Pokemon. The user faints."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "20% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Usually goes first."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "Power doubles if user is burn/poison/paralyzed."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Hits first. First turn out only. 100% flinch chance."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n3",
+    "col (8)": "Lowers the target's Sp. Def by 2."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n40",
+    "col (8)": "Always leaves the target with at least 1 HP."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's Attack by 2."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n8",
+    "col (8)": "10% chance to burn the target."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "10% chance to burn the target."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Traps and damages the target for 4-5 turns."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n30%",
+    "col (6)": "PP\n5",
+    "col (8)": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "More power the less HP the user has left."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "10% chance to burn the target. Thaws user."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "10% chance to burn the target."
+  },
+  {
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's accuracy by 1."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Confuses the target."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n15",
+    "col (8)": "Flies up on first turn, then strikes the next turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "Raises the user's critical hit ratio by 2."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Fails if the user takes damage before it hits."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "The foes' moves target the user on the turn used."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to paralyze the target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Fighting, Normal hit Ghost. Evasiveness ignored."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "User cannot move next turn."
+  },
+  {
+    "col (2)": "Power\n103",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n20",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Power\n10",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n20",
+    "col (8)": "Power doubles with each hit, up to 160."
+  },
+  {
+    "col (2)": "Power\n18",
+    "col (4)": "Accuracy\n80%",
+    "col (6)": "PP\n15",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n15",
+    "col (8)": "Hits two turns after being used."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "User recovers 50% of the damage dealt."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Paralyzes the target."
+  },
+  {
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n24",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Lowers the foe(s) Attack by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Raises the user's Sp. Atk by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "If the user faints, the attack used loses all its PP."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n30%",
+    "col (6)": "PP\n5",
+    "col (8)": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "30% chance to poison the target."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "Power doubles during Bounce and Fly."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "For 5 turns, hail crashes down."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Raises the user's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Eliminates all stat changes."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n2",
+    "col (8)": "Cures the user's party of all status conditions."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "20% chance to burn the foe(s)."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "One adjacent ally's move power is 1.5x this turn."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "Varies in power and type based on the user's IVs."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15"
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15"
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "A custom move for the EK AI."
+  },
+  {
+    "col (2)": "Power\n85",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n20",
+    "col (8)": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  {
+    "col (2)": "Power\n85",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n20",
+    "col (8)": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n30%",
+    "col (6)": "PP\n5",
+    "col (8)": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Raises the user's Attack by 1."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "User cannot move next turn."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n8",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "User cannot move next turn."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "10% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "20% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n24",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (2)": "Power\n30",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n20",
+    "col (8)": "Power doubles with each hit. Repeats for 5 turns."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "10% chance to freeze the target."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "10% chance to freeze the target."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Usually goes first."
+  },
+  {
+    "col (2)": "Power\n10",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Power\n55",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "100% chance to lower the foe(s) Speed by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "No foe can use any move known by the user."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "User recovers 1/16 max HP per turn. Traps user."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Defense by 2."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n24",
+    "col (8)": "30% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n25",
+    "col (8)": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n6",
+    "col (8)": "Lowers the target's accuracy by 1."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "1.5x damage if foe holds an item. Removes item."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "User recovers 50% of the damage dealt."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "1/8 of target's HP is restored to user every turn."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Lowers the foe(s) Defense by 1."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "30% chance to paralyze the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "For 5 turns, special damage to allies is halved."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "User's next move will not miss the target."
+  },
+  {
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n16",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "More power the heavier the target."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "50% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Usually goes first."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n15",
+    "col (8)": "Bounces back certain non-damaging moves."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Hits adjacent Pokemon. Power varies; 2x on Dig."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Prevents the target from switching out."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Raises the user's Attack by 1."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "User recovers 50% of the damage dealt."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n16",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n75%",
+    "col (6)": "PP\n5",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n20",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "Lowers target's Attack, Sp. Atk by 2. User faints."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n35",
+    "col (8)": "10% chance to raise the user's Attack by 1."
+  },
+  {
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n40",
+    "col (8)": "Lowers the target's Sp. Def by 2."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "20% chance to raise the user's Attack by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n35",
+    "col (8)": "Picks a random move."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by 50% of its max HP."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "The last move the target used replaces this one."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "User's next move will not miss the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n6",
+    "col (8)": "Raises the user's evasiveness by 2."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "If hit by special attack, returns double damage."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "User uses the target's last used move against it."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "For 5 turns, protects user's party from stat drops."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "50% chance to lower the target's Sp. Atk by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "col (2)": "Power\n55",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "100% chance to lower the target's Speed by 1."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "100% chance to lower the target's accuracy by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n15",
+    "col (8)": "Weakens Electric-type attacks to 1/2 their power."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "30% chance to lower the foe(s) accuracy by 1."
+  },
+  {
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n20",
+    "col (8)": "Attack changes based on terrain. (Swift)"
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n15",
+    "col (8)": "A sleeping target is hurt by 1/4 max HP per turn."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "Does damage equal to the user's level."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "50% chance to lower the target's accuracy by 1."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n3",
+    "col (8)": "Fighting, Normal hit Ghost. Evasiveness ignored."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n15",
+    "col (8)": "Lasts 2-3 turns. Confuses the user afterwards."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Shares HP of user and target equally."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Scatters coins."
+  },
+  {
+    "col (2)": "Power\n35",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "All active Pokemon will faint in 3 turns."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "10% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "30% chance to badly poison the target."
+  },
+  {
+    "col (4)": "Accuracy\n55%",
+    "col (6)": "PP\n40",
+    "col (8)": "Poisons the foe(s)."
+  },
+  {
+    "col (4)": "Accuracy\n75%",
+    "col (6)": "PP\n35",
+    "col (8)": "Poisons the target."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "30% chance to poison the target."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to badly poison the target."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "10% chance to freeze the foe(s)."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n15",
+    "col (8)": "40, 80, 120 power, or heals target 1/4 max HP."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Prevents moves from affecting the user this turn."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "10% chance to confuse the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Copies the target's current stat stages."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "10% chance to lower the target's Sp. Def by 1."
+  },
+  {
+    "col (2)": "Power\n140",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Has 1/4 recoil."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Does damage equal to the user's level."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Power doubles if the targeted foe is switching out."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "Usually goes first."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Raises the user's Attack by 1 if hit during use."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "For 5 turns, heavy rain powers Water moves."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Free user from hazards/bind/Leech Seed; +1 Spe."
+  },
+  {
+    "col (2)": "Power\n55",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n25",
+    "col (8)": "High critical hit ratio. Hits adjacent foes."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Charges, then hits foe(s) turn 2."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by 50% of its max HP."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n16",
+    "col (8)": "Restores the item the user last used."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "For 5 turns, physical damage to allies is halved."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "User cures its burn, poison, or paralysis."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "User sleeps 2 turns and restores HP and status."
+  },
+  {
+    "col (2)": "Power\n103",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Damage doubles if user is hit by the target."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "More power the less HP the user has left."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Forces the target to switch to a random ally."
+  },
+  {
+    "col (2)": "Power\n25",
+    "col (4)": "Accuracy\n80%",
+    "col (6)": "PP\n10",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to make the foe(s) flinch."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "50% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n15",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n55",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "100% chance to lower the target's Speed by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "User replaces its Ability with the target's."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n30",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n20",
+    "col (8)": "Power doubles with each hit. Repeats for 5 turns."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "50% chance to burn the target. Thaws user."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "For 5 turns, protects user's party from status."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's accuracy by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "For 5 turns, a sandstorm rages."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Traps and damages the target for 4-5 turns."
+  },
+  {
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n3",
+    "col (8)": "Lowers the target's Speed by 2."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n3",
+    "col (8)": "Lowers the target's Defense by 2."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Effect varies with terrain. (30% paralysis chance)"
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Does damage equal to the user's level."
+  },
+  {
+    "col (2)": "Power\n200",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Target's Def halved during damage. User faints."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "20% chance to lower the target's Defense by 1."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Usually goes first."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n30",
+    "col (8)": "Raises the user's Attack by 1."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n30%",
+    "col (6)": "PP\n8",
+    "col (8)": "OHKOs the target. Fails if user is a lower level."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "10% chance to confuse the target."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "10% chance to raise all stats by 1 (not acc/eva)."
+  },
+  {
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n32",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "Permanently copies the last move target used."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "The user and the target trade Abilities."
+  },
+  {
+    "col (2)": "Power\n130",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Raises user's Defense by 1 on turn 1. Hits turn 2."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Can hit Pokemon using Bounce or Fly."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by 50% of its max HP."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n75%",
+    "col (6)": "PP\n20",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (4)": "Accuracy\n80%",
+    "col (6)": "PP\n24",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n16",
+    "col (8)": "User must be asleep. Uses another known move."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "30% chance to poison the target."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to poison the target."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Damage doubles if target is paralyzed; cures it."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n20",
+    "col (8)": "40% chance to poison the target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the target's accuracy by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "No competitive use."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "User must be asleep. 30% chance to flinch target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n16",
+    "col (8)": "Heals the user by 50% of its max HP."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Charges turn 1. Hits turn 2. No charge in sunlight."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Always does 20 HP of damage."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "30% chance to paralyze the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Prevents the target from switching out."
+  },
+  {
+    "col (2)": "Power\n20",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "Hits 2-5 times in one turn."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Hurts grounded foes on switch-in. Max 3 layers."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Lowers the PP of the target's last move by 2-5."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n40",
+    "col (8)": "No competitive use."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "10% chance to raise the user's Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n16",
+    "col (8)": "Raises user's Defense, Sp. Def by 1. Max 3 uses."
+  },
+  {
+    "col (2)": "Power\n65",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "30% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the foe(s) Speed by 1."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "User loses 1/4 the HP lost by the target."
+  },
+  {
+    "col (4)": "Accuracy\n75%",
+    "col (6)": "PP\n30",
+    "col (8)": "Paralyzes the target."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n80%",
+    "col (6)": "PP\n25",
+    "col (8)": "Has 1/4 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "User takes 1/4 its max HP to put in a substitute."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "For 5 turns, intense sunlight powers Fire moves."
+  },
+  {
+    "col (2)": "Power\n—",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n16",
+    "col (8)": "Does damage equal to 1/2 target's current HP."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n55%",
+    "col (6)": "PP\n20",
+    "col (8)": "Causes the target to become confused."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Hits adjacent Pokemon. Double damage on Dive."
+  },
+  {
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n15",
+    "col (8)": "Raises the target's Attack by 2 and confuses it."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by 50% of its max HP."
+  },
+  {
+    "col (4)": "Accuracy\n75%",
+    "col (6)": "PP\n10",
+    "col (8)": "Causes the target to become confused."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Lowers the foe(s) evasiveness by 1."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "This move does not check accuracy. Hits foes."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n5",
+    "col (8)": "Raises the user's Attack by 2."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "Heals the user by a weather-dependent amount."
+  },
+  {
+    "col (2)": "Power\n35",
+    "col (4)": "Accuracy\n95%",
+    "col (6)": "PP\n35",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n3",
+    "col (8)": "Raises the user's Sp. Atk by 2."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n1",
+    "col (8)": "Lowers the foe(s) Defense by 1."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n20",
+    "col (8)": "Has 1/4 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n3",
+    "col (8)": "No competitive use."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n32",
+    "col (8)": "Confuses adjacent Pokemon."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n20",
+    "col (8)": "Fails when used."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Lasts 2-3 turns. Confuses the user afterwards."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n16",
+    "col (8)": "30% chance to paralyze. Can't miss in rain."
+  },
+  {
+    "col (2)": "Power\n95",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "10% chance to paralyze the target."
+  },
+  {
+    "col (2)": "Power\n75",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "10% chance to paralyze the target."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "10% chance to paralyze the target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Paralyzes the target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n6",
+    "col (8)": "Lowers the target's Attack and Defense by 1."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Target can't select the same move twice in a row."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Badly poisons the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n32",
+    "col (8)": "Copies target's stats, moves, types, and Ability."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "20% chance to paralyze or burn or freeze target."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "User switches its held item with the target's."
+  },
+  {
+    "col (2)": "Power\n10",
+    "col (4)": "Accuracy\n90%",
+    "col (6)": "PP\n10",
+    "col (8)": "Hits 3 times. Each hit can miss, but power rises."
+  },
+  {
+    "col (2)": "Power\n25",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Hits 2 times. Each hit has 20% chance to poison."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "20% chance to make the foe(s) flinch."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "Lasts 2-5 turns. Active Pokemon cannot sleep."
+  },
+  {
+    "col (2)": "Power\n35",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n10",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n55",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n30",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n70",
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n10",
+    "col (8)": "This move does not check accuracy. Goes last."
+  },
+  {
+    "col (2)": "Power\n120",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n15",
+    "col (8)": "20% chance to make the target flinch."
+  },
+  {
+    "col (2)": "Power\n40",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n25",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "20% chance to confuse the target."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n15",
+    "col (8)": "Weakens Fire-type attacks to 1/2 their power."
+  },
+  {
+    "col (2)": "Power\n150",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n8",
+    "col (8)": "Has 1/4 recoil."
+  },
+  {
+    "col (2)": "Power\n50",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n16",
+    "col (8)": "Damage doubles and type varies during weather."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n5",
+    "col (8)": "Forces the target to switch to a random ally."
+  },
+  {
+    "col (2)": "Power\n90",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n24",
+    "col (8)": "Has 1/3 recoil."
+  },
+  {
+    "col (4)": "Accuracy\n85%",
+    "col (6)": "PP\n15",
+    "col (8)": "Burns the target."
+  },
+  {
+    "col (2)": "Power\n60",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n35",
+    "col (8)": "No additional effect."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n2",
+    "col (8)": "Next turn, heals 50% of the recipient's max HP."
+  },
+  {
+    "col (4)": "Accuracy\n—",
+    "col (6)": "PP\n1",
+    "col (8)": "Raises the user's Defense by 1."
+  },
+  {
+    "col (2)": "Power\n15",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "Traps and damages the target for 2-5 turns."
+  },
+  {
+    "col (2)": "Power\n80",
+    "col (4)": "Accuracy\n100%",
+    "col (6)": "PP\n20",
+    "col (8)": "High critical hit ratio."
+  },
+  {
+    "col (4)": "Accuracy\n70%",
+    "col (6)": "PP\n10",
+    "col (8)": "Causes the target to fall asleep."
+  },
+  {
+    "col (2)": "Power\n100",
+    "col (4)": "Accuracy\n50%",
+    "col (6)": "PP\n5",
+    "col (8)": "100% chance to paralyze the target."
+  }
+]
