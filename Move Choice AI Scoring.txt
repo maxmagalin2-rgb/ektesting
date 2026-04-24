@@ -1,0 +1,680 @@
+Move Choice AI Scoring:
+
+There are 13 AI flags in base Emerald, of these only flags 0-4 and 7 are relevant for trainer AI in both base emerald and emerald kaizo. The rest are either never used or only used against non-trainers.
+
+How to read this:
+Generally this shouldn't be too bad, even if it is extremely dry and written mostly as a reference document more than any actual explanation. The most important thing to note is that "and stop" is implicit by default. If a section such as self KO moves and memento in flag 2 makes use of stating a score modifier and whether it continues or stops, if it says continue just keep following the logic to the next line and if it says stop it stops for the entire flag. If it doesn't say either, such as for superpower, it just means stop for the entire flag, so superpower is only ever subject to one of its possible modifiers for example.
+
+Initial notes:
+In a double battle against two trainers, both trainers use all flags either trainer has.
+It iterates over every tag the AI has, starting on tag 0 and going up to tag 31 in that order.
+Run the flags on every move the AI has, and even self buffing moves have a "target"
+In general, getting a score adjusted from a flag immediately ends that flags check for that move, it will be noted if this ever doesn't happen.
+If I refer to a pokemon being immune to a type in any step, it cares about type, levitate, and wonder guard, but not other sources of immunity such as Volt Absorb.
+Phrases like "attack boosting move" or "evasion lowering move" refer only to moves with that as their only effect, Calm Mind is treated differently from either special attack or special defense raising moves for example.
+Sometimes this will reference "X move effect", this refers to that move and any move with an identical effect. For example in EK Stockpile would count as "Cosmic Power effect" and not as "Stockpile" as it has been changed to have the same effect as Cosmic Power, or in the base game Detect would count as "Protect effect" or Water Spout would count as "Eruption effect", due to them having the same effect.
+The AI measures HP as a percentage, and always rounds down.
+By default, the AI sees speed tests as if was faster than the target.
+Flags
+Flag 0 - Check Bad Move
+Note the existence of the dual non-immunity glitch, it is primarily relevant to this flag, causing things such as Flygon to not get the -10 score for 3.3 as it is not seen as immune to Electric.
+
+1.	If targeting an ally, immediately stop this flag.
+2.	If using Fissure or Horn Drill, -10 score if the target is immune from either type, Levitate, or Wonder Guard
+3.	If the move is a status move, power 1 move, or a discouraged move, check if it has a bad effect; Only the first of these checks that match the move is run, even if multiple could apply.
+3.1.	If the move is a sound move and the target has the Soundproof ability, -10 score
+3.2.	If the move is a sleeping move and the target has Insomnia, Vital Spirit, is already statused, or is under the effects of Safeguard, -10 score
+3.3.	If the move is Toxic, Poison Gas, or Poison Powder and the target is a steel or poison type, has the Immunity ability, is already statused, or is under the effects of Safeguard, -10 score
+3.4.	If the move is a status move that paralyzes, if the target is immune to the moves type, has the Limber ability, is already statused, or is under the effects of Safeguard, -10 score
+3.5.	If the move is an exploding move (Explosion or Self Destruct)
+3.5.1.	If the target is immune or has Damp, -10 score
+3.5.2.	If the user has other pokemon remaining, +0 score
+3.5.3.	If the target has other pokemon remaining, -10 score
+3.5.4.	If none of the above (both user and target are on last pokemon), -1 score
+3.6.	If the move is dream eater
+3.6.1.	If the target is not sleeping, -8 score
+3.6.2.	If the target has immunity, -10 score
+3.7.	If the move is a status move that raises a single stat of the users, and that stat is already at +6, -10 score
+3.8.	If the move is a status move that lowers a single stat of the targets, and that stat is already at -6 or the target has an ability which makes this bad, -10 score 
+3.8.1.	The abilities which are seen as making a stat drop bad are white smoke and clear body for all stats, keen eye for accuracy, hyper cutter for attack, and speed boost for speed
+3.9.	If the move is Haze or Psych Up, and all of the users stats are at +0 or higher and all of the targets stats are at +0 or lower, -10 score
+3.10.	If the move is Magnitude effect and the target has the Levitate ability, -10 score
+3.11.	If the move is any of Bide, Razor Wind, Super Fang, recharging moves (Blast Burn, Hydro Cannon, Frenzy Plant, Hyper Beam), level based damage moves (Seismic Toss, Nightshade), Psywave, Counter, Flail, Reversal, happiness based damage moves (Return, Frustration), Present, Sonic Boom, Mirror Coat, Skull Bash, Focus Punch, Superpower, Endeavor, Low Kick, or Magnitude.
+3.11.1.	If the target has immunity to the move, -10 score
+3.11.2.	If the target has Wonder Guard and the move is not x2 effective, -10 score
+3.12.	If the move is Roar and the target has suction cups or no other pokemon remaining, -10 score
+3.13.	If the move is a OHKO move and the target has immunity, the Sturdy ability, or is an equal or higher level than the user, -10 score
+3.14.	If the move is Mist effect, and the user is already under the effects of Mist, -8 score
+3.15.	If the move is Focus Energy effect, and the user is already under the effects of Focus Energy, -10 score
+3.16.	If the move confuses the target (Supersonic, Confuse Ray, Sweet Kiss), is Swagger effect, or is Flatter effect
+3.16.1.	If the target is already confused, -5 score
+3.16.2.	If the target has Own Tempo or is under the effects of Safeguard, -10 score
+3.17.	If the move is Safeguard effect, Reflect effect, Light Screen effect, and the user is already under the effects of the move, -8 score
+3.18.	If the move is Substitute effect
+3.18.1.	If the user is already under the effects of Substitute, -8 score
+3.18.2.	If the user has less than 26% HP, -10 score
+3.19.	If the move is Leech Seed effect and the target is already under the effects of Leech Seed or is a grass type, -10 score
+3.20.	If the move is Disable effect or Encore effect and the target is already under the effects of the move, -8 score
+3.21.	If the move is Snore effect or Sleep Talk effect and the user is not asleep, -8 score
+3.22.	If the move is Mean Look effect, Foresight effect, Torment effect, or Perish Song effect and the target is already under the effects of the move, -10 score
+3.23.	If the move is Nightmare effect
+3.23.1.	If the target is already under the effects of Nightmare, -10 score
+3.23.2.	If the target is not asleep, -8 score
+3.24.	If the move is Curse effect or Bulk Up effect
+3.24.1.	If the user has +6 stages in Attack, -10 score
+3.24.2.	If the user has +6 stages in defense, -8 score
+3.25.	If the move is Spikes effect and the targets side of the field is already under the effects of Spikes, -10 score
+3.26.	If the move is Sandstorm effect, Sunny Day effect, Rain Dance effect, or Hail effect and the relevant weather is already active, -8 score
+3.27.	If the move is Attract effect and the target is already infatuated, has the Oblivious ability, or is not the opposite gender of the user, -10 score
+3.28.	If the move is Baton Pass effect and the user has no other pokemon left, -10 score
+3.29.	If the move is Belly Drum effect and the user has <51% HP left, -10 score
+3.30.	If the move is Future Sight effect,
+3.30.1.	If either user or target is currently under the effects of future sight, -12 score
+3.30.2.	Otherwise, +5 score
+3.31.	If the move is Teleport effect, -10 score
+3.32.	If the move is Fake Out effect and it is not the first turn the user is out, -10 score
+3.33.	If the move is Stockpile effect and the user is at stockpile count 3, -10 score
+3.34.	If the move is Spit Up effect or Swallow effect and the target is immune or the user is at stockpile count 0, -10 score Note: The "target" is as normal the player's pokemon, so swallow isn't used against ghost types.
+3.35.	If the move is Will-o-Wisp effect and the target has the Water Veil ability, is already statused, is under the effects of Safeguard, or resists or is immune to Fire, -10 score
+3.36.	If the move is Memento effect
+3.36.1.	If the target is at -6 attack, -10 score
+3.36.2.	If the target is at -6 special attack, -8 score
+3.37.	If the move is Helping Hand effect and it is not a double battle, -10 score
+3.38.	If the move is Trick effect or Knock Off effect and the target has the Sticky Hold ability, -10 score
+3.39.	If the move is Ingrain effect and the user is already under its effects, -10 score
+3.40.	If the move is Recycle effect and the user does not have a used up item, -10 score
+3.41.	If the move is Imprison effect and the user is already imprisoning a pokemon, -10 score
+3.42.	If the move is Refresh effect and the user is not under the effects of poison, burn, paralysis, or badly poisoned, -10 score
+3.43.	If the move is Mud Sport effect or Water Sport effect and the move is already in effect, -10 score
+3.44.	If the move is Tickle effect
+3.44.1.	If the target has -6 stages in Attack, -10 score
+3.44.2.	If the target has -6 stages in defense, -8 score
+3.45.	If the move is Cosmic Power effect
+3.45.1.	If the user has +6 stages in defense, -10 score
+3.45.2.	If the user has +6 stages in Special defense, -8 score
+3.46.	If the move is Calm Mind effect
+3.46.1.	If the user has +6 stages in Special Attack, -10 score
+3.46.2.	If the user has +6 stages in Special defense, -8 score
+3.47.	If the move is Dragon Dance effect
+3.47.1.	If the user has +6 stages in Attack, -10 score
+3.47.2.	If the user has +6 stages in Speed, -8 score
+4.	If the move was a damaging move that was not a discouraged move or a power 1 move
+4.1.	If the target is immune to the move due to typing, -10 score
+4.2.	If the target has Volt Absorb, Water Absorb, or Flash Fire, and the move is the relevant type, -12 score
+4.3.	If the target would be immune due to Levitate or Wonder Guard, -10 score
+Flag 1 - Try To Faint
+Note: In steps 2 and 3 of this flag it refers to random damage rolls. This correctly accounts for the abilities Blaze, Guts, Huge Power, Hustle, Marvel Scale, Minus, Overgrow, Plus, Pure Power, Swarm, Thick Fat, and Torrent. It also correctly accounts for Foretell. It incorrectly accounts for levitate, treating levitate as making ground moves x1 effectiveness ignoring typing instead of immune. It does not account for other abilities such as Volt Absorb. It always knows the actual ability during these damage calcs, the ability knowledge section at the end of this document is irrelevant.
+1.	If targeting an ally, immediately stop this flag.
+2.	Perform a random damage roll for the move, it would do more damage than the current HP of the target. Note: This checks discouraged moves, but not power 1 moves.
+2.1.	If the move is an exploding move (Explosion or Self Destruct), end this flag
+2.2.	If the move is a priority move (Quick Attack, Extreme Speed, Mach Punch), +6 score
+2.3.	Otherwise, +4 score
+3.	Roll damage for all moves that are not power 1, discouraged, or status moves, if the move is not the highest damage one, -1 score
+4.	If the move is x4 effective, 176/256 (~69%) chance of +2 score. Note: This does not exclude status moves, power 1 moves, or discouraged moves, so the AI is more likely to use Thunder Wave on Gyarados due to it being double SE for example.
+Flag 2 - Check Viability
+1.	If targeting an ally, immediately stop this flag.
+2.	If the move is a sleeping move
+2.1.	If the target has Dream Eater or Nightmare, 128/256 (50%) chance of +1 score
+2.2.	Otherwise, +0 score
+3.	If the move is a draining move
+3.1.	If the move is resisted, 206/256 (~80%) chance of -3 score
+3.2.	Otherwise, +0 score
+4.	If the move is an exploding move or Memento effect
+4.1.	If the target has at least +1 evasion, -1 score and continue
+4.2.	If the target has at least +4 evasion, 128/256 (50%) chance of -1 score and continue
+4.3.	If the user has at least 80% HP or is faster than the target, 50/256 (~20%) of +0 and stop, 206/256 (~80%) of -3 and stop
+4.4.	If the user has more than 50% HP, 50/256 (~20%) of +0 and stop, 206/256 (~80%) of -1 and stop
+4.5.	128/256 (50%) chance of +1 score and continue
+4.6.	If the user has more than 30% HP, +0 and stop
+4.7.	50/256 (~20%) chance of +0 and stop, 206/256 (~80%) chance of +1 and stop
+5.	If the move is Dream Eater effect and the target resists the move, -1 score
+6.	If the move is Mirror Move effect
+6.1.	If the user is faster than the target and the most recently used move by the target is any of Aeroblast, Attract, Confuse Ray, Cotton Spore, Covet, Cross Chop, Dynamic Punch, Extreme Speed, Fake Tears, Fissure, Flatter, Glare, Grass Whistle, Guillotine, Horn Drill, Hyper Beam, Hypnosis, Lovely Kiss, Metal Sound, Poison Powder, Sand Attack, Scary Face, Screech, Shadow Ball, Shadow Punch, Sheer Cold, Sing, Skill Swap, Sleep Powder, Smokescreen, Spore, Superpower, Swagger, Sweet Kiss, Thief, Thunder Wave, Torment, Toxic, Trick
+6.1.1.	128/256 (50%) chance of +2 score, 128/256 (50%) chance of +0 score
+6.2.	If the most recently used move by the target is any of the ones in 6.1, +0 score
+6.3.	176/256 (~69%) chance of -1 score, 80/256 (~31%) chance of +0 score
+7.	If the move is an attack boosting status move
+7.1.	If the user has +2 attack or lower and the user has 100% HP, 128/256 (50%) of +2 score and continue	
+7.2.	If the user has +3 attack or higher, 156/256 (~61%) of -1 score and continue
+7.3.	If the user has more than 70% HP, +0 score and stop
+7.4.	If the user has less than 40% HP, -2 score and stop
+7.5.	40/256 (~16%) chance of +0 score, 216/256 (~84%) chance of -2 score
+8.	If the move is a defense boosting status move or Bulk Up
+8.1.	If the user has +2 defense or lower and the user has 100% HP, 128/256 (50%) of +2 score and continue
+8.2.	If the user has +3 defense or higher, 156/256 (~61%) of -1 score and continue
+8.3.	If the user has at least 70% HP, 200/256 (~78%) of +0 score and stop
+8.4.	If the user has less than 40% HP, -2 score and stop
+8.5.	If the most recently used move by the target was a status move, 60/256 (~23%) of +0 score and stop, 196/256 (~77%) of -2 score and stop
+8.6.	If the most recently used move by the target was a special move, -2 score and stop
+8.7.	If the most recently used move by the target was a physical move, 27120/65536 (~41%) chance of +0 score and stop, 38416/65536 (~59%) of -2 score and stop
+9.	If the move is a speed boosting status move
+9.1.	If the user is faster than the target, -3 score
+9.2.	If the target is faster than the user, 70/256 (~27%) of +0 score, 186/256 (~73%) of +3 score
+10.	If the move is a special attack boosting status move
+10.1.	If the user has +2 special attack or lower and the user has 100% HP, 128/256 (50%) of +2 score and continue
+10.2.	If the user has +3 special attack or higher 156/256 (~61%) of -1 score and continue
+10.3.	If the user has more than 70% HP, +0 score and stop
+10.4.	If the user has less than 40% HP, -2 score and stop
+10.5.	70/256 (~27%) chance of +0 score, 186/256 (~73%) chance of -2 score
+11.	If the move is a special defense boosting status move, Cosmic Power effect, or Calm Mind effect
+11.1.	If the user has +2 special defense or lower and the user has 100% HP, 128/256 (50%) of +2 score and continue
+11.2.	If the user has +3 special defense or higher, 156/256 (~61%) of -1 score and continue
+11.3.	If the user has at least 70% HP, 200/256 (~78%) of +0 score and stop
+11.4.	If the user has less than 40% HP, -2 score and stop
+11.5.	If the most recently used move by the target was a status move, 60/256 (~23%) of +0 score and stop, 196/256 (~77%) of -2 score and stop
+11.6.	If the most recently used move by the target was a physical move, -2 score and stop
+11.7.	If the most recently used move by the target was a special move, 27120/65536 (~41%) chance of +0 score and stop, 38416/65536 (~59%) of -2 score and stop
+12.	If the move is an accuracy boosting status move
+12.1.	If the user has at least +3 accuracy, 206/256 (~80%) of -2 score and continue
+12.2.	If the user has more than 70% HP, +0 score and stop
+12.3.	-2 score and stop
+13.	If the move is an evasion boosting status move (includes minimize)
+13.1.	If the user has at least 90% HP, 156/256 (~61%) of +3 score and continue
+13.2.	If the user has at least +3 evasion, 128/256 (50%) of -1 score and continue
+13.3.	If the target is badly poisoned
+13.3.1.	If the user has at least 51% HP, 206/256 (~80%) of +3 score and continue
+13.3.2.	If the user has less than 51% HP, 36256/65536 (~55%) of +3 score and continue
+13.4.	If the target is under the effects of Leech Seed, 186/256 (~73%) of +3 score and continue
+13.5.	If the user is under the effects of Ingrain, 128/256 (50%) of +2 score and continue
+13.6.	If the target is cursed, 186/256 (~73%) of +3 score and continue
+13.7.	If the user has more than 70% HP or exactly +0 evasion, +0 score and stop
+13.8.	If the user or the target has less than 40% HP, -2 score and stop
+13.9.	70/256 (~27%) of +0 score and stop, 186/256 (~73%) of -2 score and stop
+14.	If the move is an Always Hit move
+14.1.	If the target has +5 evasion or more or the user has -5 accuracy or less, +1 score and continue
+14.2.	If the target has +3 evasion or more or the user has -3 accuracy or less
+14.2.1.	100/256 (~39%) chance of +0 score and stop, 156/256 (~61%) chance of +1 score and stop
+15.	If the move is an attack lowering move
+15.1.	If the target is not +0 attack
+15.1.1.	-1 score and continue
+15.1.2.	If the user has 90% HP or less, -1 score and continue
+15.1.3.	If the target has -3 attack or less, 206 (~80%) of -2 score and continue
+15.2.	If the target has 70% HP or less, -2 score and continue
+15.3.	If the target is a Normal, Fighting, Ground, Rock, Bug, or Steel type, +0 score and stop Note: This does not check for Flying, Poison, or Ghost types
+15.4.	50/256 (~20%) of +0 score, 206/256 (~80%) of -2 score
+16.	If the move is a defense lowering move or Tickle effect
+16.1.	If the user has less than 70% HP or the target has -3 defense or lower, 206 (~80%) of -2 score and continue
+16.2.	If the user has 70% HP or less, -2 score
+17.	If the move is a speed lowering move, Mud Shot, Icy Wind, or Rock Tomb
+17.1.	If the user is faster than the target, -3 score
+17.2.	If the target is faster than the user, 70/256 (~27%) of +0 score, 186/256 (~73%) of +2 score
+18.	If the move is a special attack lowering move
+18.1.	If the target is not +0 special attack
+18.1.1.	-1 score and continue
+18.1.2.	If the user has 90% HP or less, -1 score and continue
+18.1.3.	If the target has -3 attack or lower, 206 (~80%) of -2 score and continue
+18.2.	If the target has 70% HP or less, -2 score and continue
+18.3.	If the target is has a special type, +0 score and stop
+18.4.	50/256 (~20%) of +0 score, 206/256 (~80%) of -2 score
+19.	If the move is a special defense lowering move
+19.1.	If the user has less than 70% HP or the target has -3 special defense or lower, 206 (~80%) of -2 score and continue
+19.2.	If the user has 70% HP or less, -2 score
+20.	If the move is an accuracy lowering move
+20.1.	If the user has less than 70% HP or the target has 70% HP or less, 156/256 (~61%) of -1 score and continue Note: That is technically two different HP thresholds, but this only matters if your pokemon is at 70% exactly.
+20.2.	If the target has -2 accuracy or lower, 176/256 (~69%) of -2 score and continue
+20.3.	If the target is badly poisoned, 186/256 (~73%) of +2 score and continue
+20.4.	If the target is under the effects of Leech Seed, 186/256 (~73%) of +2 score and continue
+20.5.	If the user is under the effects of Ingrain, 128/256 (50%) of +1 score and continue
+20.6.	If the target is cursed, 186/256 (~73%) of +2 score and continue
+20.7.	If the user has more than 70% HP or the target has +0 accuracy, +0 score and stop
+20.8.	If the user or the target has less than 40% HP, -2 score and stop
+20.9.	70/256 (~27%) of +0 score and stop, 186/256 (~73%) of -2 score and stop
+21.	If the move is an evasion lowering move
+21.1.	If the user has less than 70% HP or the target has -3 evasion or lower, 206 (~80%) of -2 score and continue
+21.2.	If the target has 70% HP or less, -2 score
+22.	If the move is Haze effect
+22.1.	If the user's attack, defense, special attack, special defense, or evasion are +3 or higher, or the target's attack, defense, special attack, special defense, or accuracy are -3 or lower, 206/256 (~80%) of -3 score and continue
+22.2.	If the target's attack, defense, special attack, special defense, or evasion are +3 or higher, or the user's attack, defense, special attack, special defense, or accuracy are -3 or lower, 206/256 (~80%) of +3 score and stop
+22.3.	206/256 (~80%) of -1 score
+23.	If the move is Bide effect
+23.1.	If the user has 90% HP or less, -2 score
+24.	If the move is Roar effect
+24.1.	If the target's attack, defense, special attack, special defense, or evasion are +3 or higher, 128/256 (50%) of +2 score, 128/256 (50%) of +0 score
+24.2.	Otherwise, -3 score
+25.	If the move is Conversion effect
+25.1.	If the user has 90% HP or less, -2 score and continue
+25.2.	If it is the first turn of battle, +0 score
+25.3.	50/256 (~20%) of +0 score, 206/256 (~80%) of -2 score
+26.	If the move is a weather based HP Restoring move (Morning Sun, Synthesis, Moonlight)
+26.1.	If the current weather is Hail, Rain, or Sandstorm, -2 score and continue
+26.2.	Go to 27.1
+27.	If the move with restore HP/healing effect (Slack Off, Recover), Softboiled effect (Softboiled, Milk Drink), or Swallow effect
+27.1.	If the user has 100% HP, -3 score
+27.2.	If the user is faster than the target, -8 score
+27.3.	If the user has more than 70% HP, 226/256 (~88%) of -3 score
+27.4.	If the target has a move with Snatch effect, 36816/65536 (~56%) of +2 score, 28720/65536 (~44%) of +0 score
+27.5.	20/256 (~8%) of +0 score, 236/256 (~92%) of +2 score. Note: This is really just "if you don't have Snatch."
+28.	If the move is Rest effect
+28.1.	If the user is faster and has 100% HP, -8 score
+28.2.	If the target is faster than the user
+28.2.1.	If the user has more than 70% HP, -3 score
+28.2.2.	If the user has at least 60% HP, 206/256 (~80%) of -3 score
+28.3.	If the user is faster than the target
+28.3.1.	If the user has at least 50% HP, -3 score
+28.3.2.	If the user has at least 40% HP, 186/256 (~73%) of -3 score
+28.4.	If the target has a move with Snatch effect, 50676/65536 (~77%) of +3 score, 14860/65536 (~23%) of +0 score
+28.5.	10/256 (~4%) of +0 score, 246/256 (~96%) of +3 score
+29.	If the move is Toxic effect or Leech Seed effect
+29.1.	If the user has a damaging move
+29.1.1.	If the user has 50% HP or less, 206/256 (~80%) of -3 score and continue
+29.1.2.	If the user has 50% HP or less, 206/256 (~80%) of -3 score and continue Note: This is not a typo, it actually does it twice.
+29.2.	If the user has a move with Protect effect or +1 Special Defense effect, 196/256 (~77%) of +2 score Note: There are no moves with +1 SpD in Emerald.
+30.	If the move is Light Screen effect
+30.1.	If the user has less than 50% HP, -2 score
+30.2.	If the target has a special type, +0 score
+30.3.	50/256 (~20%) of +0 score, 206/256 (~80%) of -2 score
+31.	If the move is Reflect effect
+31.1.	If the user has less than 50% HP, -2 score
+31.2.	If the target has a physical type, +0 score
+31.3.	50/256 (~20%) of +0 score, 206/256 (~80%) of -2 score
+32.	If the move is a OHKO move, +0 score
+33.	If the move is a Razor Wind effect, Sky Attack effect, Skull Bash effect, or Solar Beam effect
+33.1.	If the move is resisted, -2 score
+33.2.	If the target has a move with Protect effect, -2 score
+33.3.	If the user has 38% HP or less, -1 score
+33.4.	Otherwise, +0 score
+34.	If the move is Super Fang
+34.1.	If the target has 50% HP or less, -1 score
+34.2.	Otherwise, +0 score
+35.	If the move is a trapping or binding move
+35.1.	If the target is badly poisoned, cursed, infatuated, or under the effects of Perish Song, 128/256 (50%) chance of +1 score
+35.2.	Otherwise, +0 score
+36.	If the move is a high crit move, Blaze Kick effect, or Poison Tail effect
+36.1.	If the move is resisted, +0 score
+36.2.	If the move is super effective, 128/256 (50%) +0 score, 128/256 (50%) +1 score
+36.3.	192/256 (75%) +0 score, 64/256 (25%) +1 score
+37.	If the move is Swagger
+37.1.	If the user has Psych Up
+37.1.1.	If target has -2 Attack or higher, -5 score
+37.1.2.	If it is the first turn of battle, +5 score
+37.1.3.	If it is not the first turn of battle, +3 score
+37.2.	Go to 38.1
+38.	If the move is Flatter
+38.1.	128/256 (50%) of +1 score and continue
+38.2.	Go to 39.1
+39.	If the move is a confusing status move 
+39.1.	If the target has more than 70% HP, +0 score
+39.2.	If the target has more than 50% HP, 128/256 (50%) of -1 score, 128/256 (50%) of +0 score
+39.3.	If the target has more than 30% HP, 128/256 (50%) of -2 score, 128/256 (50%) of -1 score
+39.4.	128/256 (50%) of -3 score, 128/256 (50%) of -2 score
+40.	If the move is a poisoning status move (Poison Gas or Poison Powder)
+40.1.	If the user is less than 50% HP, or the target is 50% HP or less, -1 score
+41.	If the move is a paralyzing status move
+41.1.	If the target is faster, 20/256 (~8%) chance of +0, 236/256 (~92%) chance of +3
+41.2.	If the user has 70% or less HP, -1 score
+42.	If the move is Vital Throw effect
+42.1.	If the target is faster than the user or the user is more than 60% HP, +0 score
+42.2.	If the user is less than 40% HP, 50/256 (~20%) of +0 score, 206/256 (~80%) of -1 score
+42.3.	15656/65536 (~24%) of -1 score, 49880/65536 (~76%) of +0 score
+43.	If the move is Substitute effect
+43.1.	If the user has 50% or less HP, 156/256 (~61%) of -1 score and continue
+43.2.	If the user has 70% or less HP, 156/256 (~61%) of -1 score and continue
+43.3.	If the user has 90% or less HP, 156/256 (~61%) of -1 score and continue
+43.4.	If target is faster than the user, +0 score and stop
+43.5.	If most recently used move by the target was a status move that paralyzes, burns, sleeps, poisons, badly poisons, confuses, or leech seeds and the user does not have the relevant condition, 156/256 (~61%) of +1 score
+44.	If the move has a recharge turn
+44.1.	If the target resists the move, -1 score
+44.2.	If the target is faster than the user
+44.2.1.	If the user has less than 60% HP, +0 score
+44.2.2.	Otherwise, -1 score
+44.3.	If the user is faster than the target
+44.3.1.	If the user has 40% HP or less, +0 score
+44.3.2.	Otherwise, -1 score
+45.	If the move is Disable effect
+45.1.	If the target is faster than the user, +0 score
+45.2.	If the most recent move used by the target was a damaging move, +1 score
+45.3.	If the most recent move used by the target was a status move, 100/256 (~39%) of +0 score, 156/256 (~61%) of -1 score
+46.	If the move is Encore effect
+46.1.	If the target is faster than the user, -2 score
+46.2.	If any of the target's moves are disabled, 30/256 (~12%) +0 score, 226/256 (~88%) +3 score
+46.3.	If the most recent used move by the target has one of the following effects
+46.3.1.	Attack Up 1 effect, Attack Up 2 effect, Attract effect, Belly Drum effect, Camouflage effect, Charge effect, Confuse effect, Conversion effect, Conversion 2 effect, Defense Up 1 effect, Dragon Dance effect, Dream Eater effect, Encore effect, Endure effect, Fake Out effect, Follow Me effect, Foresight effect, Future Sight effect, Grudge effect, Hail effect, Haze effect, Heal Bell effect, Imprison effect, Ingrain effect, Knock Off effect, Leech Seed effect, Light Screen effect, Lock On effect, Mean Look effect, Mud Sport effect, Nightmare effect, Paralyze effect, Perish Song effect, Poison effect, Protect effect, Psych Up effect, Rain Dance effect, Recycle effect, Refresh effect, Rest effect, Roar effect, Role Play effect, Safeguard effect, Sandstorm effect, Skill Swap effect, Special Attack Up 1 effect, Special Defense Up 2 effect, Speed Up 1 effect, Spit Up effect, Splash effect, Stockpile effect, Sunny Day effect, Super Fang effect, Swagger effect, Swallow effect, Teeter Dance effect, Torment effect, Toxic effect, Trick effect, Water Sport effect, Will O Wisp effect
+46.3.2.	If any of those effects were found, 30/256 (~12%) +0 score, 226/256 (~88%) +3 score
+46.4.	If none were found, -2 score
+47.	If the move is Counter effect
+47.1.	If the target is asleep, confused, or infatuated, -1 score
+47.2.	If the user has 30% HP or less, 246/256 (~96%) of -1 score and continue
+47.3.	If the user has 50% HP or less, 156/256 (~61%) of -1 score and continue
+47.4.	If the user has Mirror Coat, 100/256 (~39%) of +0 score, 156/256 (~61%) of +4 score
+47.5.	If the target is not taunted, 156/256 (~61%) of +1 score and continue
+47.6.	If the most recent move used by the target was a damaging physical move, 100/256 (~39%) of +0 score, 156/256 (~61%) of +1 score
+47.7.	If the most recent move used by the target was a damaging special move, -1 score
+47.8.	If the most recent move used by the target was a status move
+47.8.1.	If the target has a physical type, +0 score
+47.8.2.	32136/65536 (~49%) of +4 score, 33400/65536 (~51%) of +0 score
+48.	If the move is Mirror Coat effect
+48.1.	If the target is asleep, confused, or infatuated, -1 score
+48.2.	If the user has 30% HP or less, 246/256 (~96%) of -1 score and continue
+48.3.	If the user has 50% HP or less, 156/256 (~61%) of -1 score and continue
+48.4.	If the user has Counter, 100/256 (~39%) of +0 score, 156/256 (~61%) of +4 score
+48.5.	If the target is not taunted, 156/256 (~61%) of +1 score and continue
+48.6.	If the most recent move used by the target was a damaging special move, 100/256 (~39%) of +0 score, 156/256 (~61%) of +1 score
+48.7.	If the most recent move used by the target was a damaging physical move, -1 score
+48.8.	If the most recent move used by the target was a status move
+48.8.1.	If the target has a special type, +0 score
+48.8.2.	32136/65536 (~49%) of +4 score, 33400/65536 (~51%) of +0 score
+49.	If the move is Magic Coat effect
+49.1.	If the user has 30% HP or less, 156/256 (~61%) of -1 score and continue
+49.2.	If it is the first turn the user is out, 100/256 (~39%) of +1 score, 156/256 (~61%) of +0 score
+49.3.	30/256 (~12%) +0 score, 226/256 (~88%) -1 score
+50.	If the move is Pain Split effect
+50.1.	If the target has less than 80% HP, -1 score
+50.2.	If the target is faster than the user
+50.2.1.	If the user has more than 60% HP, -1 score
+50.2.2.	If the user has 60% HP or less, +1 score
+50.3.	If the user is faster than the target
+50.3.1.	If the user has more than 40% HP, -1 score
+50.3.2.	If the user has 40% HP or less, +1 score
+51.	If the move is Fake Out effect, +2 score
+52.	If the move is Snore effect, +2 score
+53.	If the move is Sleep Talk effect
+53.1.	If the user is asleep, +10 score
+53.2.	If the user is not asleep, -5 score
+54.	If the move is Lock On effect, 128/256 (50%) of +2 score, 128/256 (50%) of +0 score
+55.	If the move is Destiny Bond effect
+55.1.	-1 score and continue
+55.2.	If the target is faster than the user, +0 score
+55.3.	If the user has 70% HP or less, 128/256 (50%) of +1 score and continue
+55.4.	If the user has 50% HP or less, 128/256 (50%) of +1 score and continue
+55.5.	If the user has 30% HP or less, 156/256 (~61%) of +2 score, 100/256 (~39%) of +0 score
+56.	If the move is Flail effect
+56.1.	If the target is faster than the user
+56.1.1.	If the user has more than 60% HP, -1 score
+56.1.2.	If the user has more than 40% HP, +0 score
+56.2.	If the user is faster than the target
+56.2.1.	If the user has more than 33% HP, -1 score
+56.2.2.	If the user has more than 20% HP, +0 score
+56.2.3.	If the user has less than 8% HP, +1 score and continue
+56.3.	156/256 (~61%) of +1 score, 100/256 (~39%) of +0 score
+57.	If the move is Heal Bell effect
+57.1.	If the target or any member of the target's party is statused, +0 score
+57.2.	-5 score
+58.	If the move is Thief effect
+58.1.	If the target hasn't used leftovers, -2 score Note: This move is meant to cover more, but due to a bug the AI can't correctly identify most items so this only checks for leftovers in practice.
+58.2.	206/256 (~80%) of +1 score, 50/256 (~20%) of +0 score
+59.	If the move is Curse effect
+59.1.	If the user is a Ghost type, 80/256 (~31%) of +0 score, 176/256 (~69%) of -1 score
+59.2.	If the user has +3 defense or lower, 128/256 (50%) of +1 score and continue
+59.3.	If the user has +1 defense or lower, 128/256 (50%) of +1 score and continue
+59.4.	If the user has +0 defense or lower, 128/256 (50%) of +1 score, 128/256 (50%) of +0 score
+60.	If the move is Protect effect
+60.1.	If the user has successfully protected for their last two turns, -2 score
+60.2.	If the user is badly poisoned, cursed, under the effects of Perish Song, infatuated, leech seeded, under the effects of Yawn, has a move with Defense Curl effect, has a move with restore HP effect (Slack Off, Recover)
+60.2.1.	If the last used move by the target had Lock On effect, -2 score
+60.2.2.	Otherwise, +0 score
+60.3.	If the target is badly poisoned, cursed, under the effects of Perish Song, infatuated, leech seeded, under the effects of Yawn, or the last move used by the target was not Lock On effect, +2 score and continue
+60.4.	128/256 (50%) of -1 score and continue
+60.5.	If the user did not successfully protect on their previous turn, +0 score
+60.6.	If user did protect, 128/256 (50%) of -1 score, 128/256 (50%) of -2 score
+61.	If the move is Foresight effect
+61.1.	If the user is Ghost type, 30976/65536 (~47%) of +2 score, 34560/65536 (~53%) of +0 score
+61.2.	If the user has +2 evasion or below, 176/256 (~69%) of +2 score, 80/256 (~31%) of +0 score
+61.3.	Otherwise, -2 score
+62.	If the move is Endure effect
+62.1.	If the user has less than 4% HP, -1 score
+62.2.	If the user has less than 35% HP, 70/256 (~27%) of +0 score, 186/256 (~73%) of +1 score
+62.3.	Otherwise, -1 score
+63.	If the move is Baton Pass effect
+63.1.	If the users attack, defense, special attack, special defense, or evasion is at +3 or higher
+63.1.1.	If the target is faster than the user, and the user has more than 70% HP, +0 score
+63.1.2.	If the user is faster than the target, and the user has more than 60% HP, +0 score
+63.1.3.	176/256 (~69%) of +2 score, 80/256 (~31%) of +0 score
+63.2.	If the users attack, defense, special attack, special defense, or evasion is at +2 or higher
+63.2.1.	If the target is faster than the user, and the user has 70% HP or more , -2 score
+63.2.2.	If the user is faster than the target, and the user has more than 60% HP, -2 score
+63.2.3.	Otherwise, +0 score
+63.3.	Otherwise, -2 score
+64.	If the move is Pursuit effect
+64.1.	If it is the first turn the user is out, and the target is Ghost or Psychic type, 128/256 (50%) of +1 score, 128/256 (50%) of +0 score
+64.2.	Otherwise, +0 score
+65.	If the move is Rain Dance effect Note: There is actually no check for Sandstorm
+65.1.	If the target is faster than the user, and the user has the Swift Swim ability, +1 score Note: In this case, the AI only sees itself as faster in the case of a speed tie a random 50% of the time.
+65.2.	If the user has less than 40% HP, -1 score
+65.3.	If the weather is currently Hail, Sandstorm, or Sunny, or the user has the Rain Dish ability, +1 score
+65.4.	Otherwise, +0 score
+66.	If the move is Sunny Day effect
+66.1.	If the user has less than 40% HP, -1 score
+66.2.	If the weather is currently Hail, Rain, or Sandstorm, +1 score
+66.3.	Otherwise, +0 score
+67.	If the move is Hail effect
+67.1.	If the user has less than 40% HP, -1 score
+67.2.	If the weather is currently Rain, Sandstorm, or Sunny, +1 score
+67.3.	Otherwise, +0 score
+68.	If the move is Belly Drum effect
+68.1.	If the user has 90% HP or less, -2 score
+68.2.	Otherwise, +0 score
+69.	If the move is Psych Up effect
+69.1.	If the targets attack, defense, special attack, special defense, or evasion is at +3 or higher
+69.1.1.	If the users attack, defense, special attack, or special defense is at +0 or lower, +1 score
+69.1.2.	If the users evasion is at +0 or lower, +2 score
+69.1.3.	50/256 (~20%) of +0 score, 200/256 (~80%) of -2 score
+69.2.	Otherwise, -2 score
+70.	If the move has a semi-invulnerable turn (Dive, Bounce, Fly, Dig)
+70.1.	If the target has a move with Protect effect, -1 score
+70.2.	If the target is badly poisoned, cursed, or leech seeded, 176/256 (~69%) of +1 score, 80/256 (~31%) of +0 score
+70.3.	If the weather is Hail, and the user is Ground, Rock, or Steel type, 176/256 (~69%) of +1 score, 80/256 (~31%) of +0 score Note: Yes, these are actually backwards.
+70.4.	If the weather is Sandstorm, and the user is Ice type, 176/256 (~69%) of +1 score, 80/256 (~31%) of +0 score
+70.5.	If the user is faster and the most recent move by the target was not Lock On effect, 176/256 (~69%) of +1 score, 80/256 (~31%) of +0 score
+70.6.	Otherwise, +0 score
+71.	If the move is Spit Up effect
+71.1.	If the user's stockpile count is 2 or higher, 176/256 (~69%) of +2 score, 80/256 (~31%) of +0 score
+71.2.	Otherwise, +0 score
+72.	If the move is Facade effect
+72.1.	If the target is burned, paralyzed, poisoned, or badly poisoned, +1 score
+72.2.	Otherwise, +0 score
+73.	If the move is Focus Punch effect
+73.1.	If the target resists the move, -1 score
+73.2.	If the target is asleep, +1 score
+73.3.	If the target is confused or infatuated
+73.3.1.	If the user is behind a substitute, 156/256 (~61%) of +5 score, 100/256 (~39%) of +0 score 
+73.3.2.	If the user is not behind a substitute, 156/256 (~61%) of +1 score, 100/256 (~39%) of +0 score 
+73.4.	If it is not the first turn the user is out, +0 score
+73.5.	156/256 (~61%) of +1 score, 100/256 (~39%) of +0 score 
+74.	If the move is Smelling Salt effect
+74.1.	If the target is paralyzed, +1 score
+74.2.	Otherwise, +0 score
+75.	If the move is Trick effect Note: While the code suggests that the AI will avoid swapping similar items (like choice band for choice band), due to a bug the AI is really terrible at correctly identifying what items you have so this doesn't work. The below should match how it works in practice.
+75.1.	If the user has a Choice Band, +5 score
+75.2.	If the user has an item with Macho Brace effect or confuse/heal berry (e.g. Wiki Berry), 206/256 (~80%) +2 score, 50/256 (~20%) +0 score
+75.3.	Otherwise, -3 score
+76.	If the move is Skill Swap effect or Role Play effect
+76.1.	If the user has any of the following abilities: Battle Armor, Chlorophyll, Cute Charm, Effect Spore, Flash Fire, Huge Power, Marvel Scale, Pure Power, Rain Dish, Sand Veil, Shed Skin, Shield Dust, Speed Boost, Static, Swift Swim, or Wonder Guard, -1 score
+76.2.	If the target has any of the abilities mentioned in 76.1, 206/256 (~80%) +2 score, 50/256 (~20%) +0 score
+76.3.	Otherwise, -1 score
+77.	If the move is Superpower effect
+77.1.	If the target resists the move, -1 score
+77.2.	If the user has -1 attack or lower, -1 score
+77.3.	If the target is faster, and the user has at least 60% HP, -1 score
+77.4.	If the user is faster, and the user has at least 40% HP, -1 score
+77.5.	Otherwise, +0 score
+78.	If the move is Recycle effect
+78.1.	If the user's held item is a Chesto Berry, Lum Berry, or Starf Berry, 206/256 (~80%) +1 score, 50/256 (~20%) +0 score
+78.2.	Otherwise, -2 score
+79.	If the move is Revenge effect
+79.1.	If the target is not asleep, infatuated, or confused, 70/256 (~27%) +2 score
+79.2.	Otherwise, -2 score
+80.	If the move is Brick Break effect
+80.1.	If the target is under the effects of Reflect, +1 score
+80.2.	Otherwise, +0 score
+81.	If the move is Knock Off effect
+81.1.	If the user has 30% HP or more, and it is not the user's first turn on the field, 70/256 (~27%) +1 score
+81.2.	Otherwise, +0 score
+82.	If the move is Endeavor effect
+82.1.	If the target has less than 70% HP, -1 score
+82.2.	If the target is faster than the user
+82.2.1.	If the user has more than 50% HP, -1 score
+82.2.2.	Otherwise, +1 score
+82.3.	If the user is faster than the target
+82.3.1.	If the user has more than 40% HP, -1 score
+82.3.2.	Otherwise, +1 score
+83.	If the move is Eruption effect
+83.1.	If the target resists the move, -1 score
+83.2.	If the target is faster than the user
+83.2.1.	If the target is more than 70% HP, +0 score
+83.2.2.	Otherwise, -1 score
+83.3.	If the user is faster than the target
+83.3.1.	If the target is more than 50% HP, +0 score
+83.3.2.	Otherwise, -1 score
+84.	If the move is Imprison effect
+84.1.	If it is not the user's first turn on the field, 156/256 (~61%) chance of +2 score
+84.2.	Otherwise, +0 score
+85.	If the move is Refresh effect
+85.1.	If the target has less than 50% HP, -1 score
+85.2.	Otherwise, +0 score
+86.	If the move is Snatch effect
+86.1.	If it is the user's first turn on the field, 100/256 (~39%) chance of +2 score, 156/256 (~61%) chance of +0 score
+86.2.	30/256 (~12%) of +0 score
+86.3.	If the target is faster than the user
+86.3.1.	If the target has more than 25% HP, 30/256 (~12%) of +0 score, 226/256 (~88%) of -2 score
+86.3.2.	If the user has a move with restore HP effect, or Defense Curl effect, 150/256 (~59%) chance of +0 score, 106/256 (~41%) chance of +2 score
+86.3.3.	6656/65536 (~10%) of +1 score, 6900/65536 (~11%) of +0 score, 51980/65536 (~79%) of -2 score
+86.4.	If the user is faster than the target
+86.4.1.	If the user has 100% HP, and the target has 70% or more HP, 196/256 (~77%) of +0 score
+86.4.2.	30/256 (~12%) of +0 score, 226/256 (~88%) of -2 score
+87.	If the move is Mud Sport effect
+87.1.	If the user has less than 50% HP, -1 score
+87.2.	If the target is Electric type, +2 score
+87.3.	Otherwise, -1 score
+88.	If the move is Water Sport effect
+88.1.	If the user has less than 50% HP, -1 score
+88.2.	If the target is Fire type, +2 score
+88.3.	Otherwise, -1 score
+89.	If the move is Overheat effect Note: Overheat and Psycho Boost
+89.1.	If the target resists the move, -1 score
+89.2.	If the target is faster than the user
+89.2.1.	If the target is more than 80% HP, +0 score
+89.2.2.	Otherwise, -1 score
+89.3.	If the user is faster than the target
+89.3.1.	If the target is more than 60% HP, +0 score
+89.3.2.	Otherwise, -1 score
+90.	If the move is Dragon Dance effect
+90.1.	If the target is faster than the user, 128/256 (50%) of +1 score, 128/256 (50%) of +0 score
+90.2.	If the user has 50% HP or less, 186/256 (~73%) of -1 score
+90.3.	Otherwise, +0 score
+Flag 3 - Setup First Turn
+1.	If targeting an ally, immediately stop this flag.
+2.	If it is the first turn of the battle and the move has one of the following effects, 80/256 (~31%) chance of +2 score
+○	Stat boosting moves
+○	Stat lowering moves
+○	Conversion
+○	Light Screen, Reflect
+○	Focus Energy
+○	Confusing moves
+○	Poisoning, burning, and paralyzing status moves (not Toxic)
+○	Substitute
+○	Leech Seed
+○	Curse
+○	Swagger/Flatter
+○	Camouflage
+○	Yawn
+○	Torment
+○	Ingrain
+○	Imprison
+○	Teeter Dance
+Flag 4 - Risky
+1.	If targeting an ally, immediately stop this flag.
+2.	If the move meets one of the following criteria, give it +2 score with 128/256 (50%) chance
+○	Sleep moves (Sing, Sleep Powder, Hypnosis, Lovely Kiss, Spore, Sleep Talk, Grass whistle)
+○	Exploding (Self Destruct, Explosion)
+○	Mirror Move
+○	OHKO moves (Guillotine, Horn Drill, Fissure, Sheer Cold)
+○	High critical moves (Karate Chop, Razor Leaf, Crabhammer, Slash, Aeroblast, Cross Chop, Air Cutter, Leaf Blade)
+○	Confusing moves (Supersonic, Confuse Ray, Sweet Kiss)
+○	Metronome
+○	Psywave
+○	Counter
+○	Destiny Bond
+○	Swagger
+○	Attract
+○	Present
+○	Omniboosting moves (Ancient Power, Silver Wind)
+○	Belly Drum
+○	Mirror Coat
+○	Focus Punch
+○	Teeter Dance
+Flag 5 - Prefer Strongest Move
+Not currently documented due to lack of use.
+Flag 6 - Prefer Baton Pass
+Not currently documented due to lack of use.
+Flag 7 - Double Battle
+This flag is always used in double battles in addition to any other flags, even with special flags that override normal flag choosing logic.
+1.	If the target is an ally
+1.1.	If the move is a status move, a power 1 move, or a discouraged move
+1.1.1.	If the move is Skill Swap
+1.1.1.1.	If the target has the Truant ability, +10 score
+1.1.1.2.	If the user has the Levitate ability, the target does not have the Levitate ability, and the target is Electric type, +1 score
+1.1.1.3.	If the user has the Compound Eyes ability and the user's partner has one of the moves Blizzard, Cross Chop, Dynamic Punch, Fire Blast, Hydro Pump, Megahorn, or Thunder, +3 score
+1.1.1.4.	Otherwise, -30 score
+1.1.2.	If the move is Will-o-Wisp or Toxic
+1.1.2.1.	If the target does not have the Guts ability, is already statused, or is at less than 91% HP, -30 score
+1.1.2.2.	Otherwise, +5 score
+1.1.3.	If the move is Helping Hand, 64/256 (25%) chance of -1 score, 192/256 (75%) chance of +2 score
+1.1.4.	If the move is Swagger
+1.1.4.1.	If the target has a Persim berry
+1.1.4.1.1.	If the target has more than +1 Atk, +0 score
+1.1.4.1.2.	Otherwise, +3 score
+1.1.4.2.	Otherwise, -30 score
+1.1.5.	Otherwise, -30 score
+1.2.	If the move is a Fire type move
+1.2.1.	If the target has the Flash Fire ability and the damage boost is not currently active, +3 score
+1.2.2.	Otherwise, -30 score
+2.	If the move is Skill Swap
+2.1.	If the user's ability is Truant, +5 score
+2.2.	If the target's ability is Shadow Tag or Huge Power, +2 score
+2.3.	Otherwise, +0 score
+3.	If the move is Earthquake or Magnitude
+3.1.	If the user's partner has the Levitate ability or is Flying type, +2 score
+3.2.	If the user's partner is Fire, Electric, Poison, or Rock type, -10 score
+3.3.	Otherwise, -3 score
+4.	If the move is Electric type
+4.1.	If the target's partner does not have the Lightning Rod ability, +0 score
+4.2.	If the target's partner is not the Ground type, -2 score
+4.3.	If the target's partner is the Ground type, -10 score
+5.	If the move is Fire type
+5.1.	If the user has the damage boost from Flash Fire, +1 score
+5.2.	Otherwise, +0 score
+6.	If the user does not have the Guts ability
+6.1.	If the user does not have a status, +0 score
+6.2.	If the move is a status move, power 1 move, or discouraged move, -5 score
+6.3.	Roll damage for all moves, if this was the highest damage move, +3 score
+6.4.	Otherwise, +1 point
+7.	If the user's partner has the move Helping Hand and the move is not a status move, power 1 move, or discouraged move, +1 point
+Flag 8 - HP Aware
+Not currently documented due to lack of use.
+Flag 9 - Unknown
+Not currently documented due to lack of use.
+Flag 29 - Roaming
+This special flag is used exclusively by roaming pokemon normally. This overrides normal enemy AI flags. Not currently documented due to lack of relevance.
+Flag 30 - Safari
+This special flag is used exclusively in safari battles normally. This overrides normal enemy AI flags. Not currently documented due to lack of relevance.
+Flag 31 - First Battle
+This special flag is used exclusively in the first tutorial battle normally. This overrides normal enemy AI flags. Not currently documented due to lack of relevance.
+
+Other
+Ability Knowledge
+The AI in many cases will try to act based off its knowledge of the player's abilities. The AI does not innately know the abilities of the player's pokemon. The AI always starts with no knowledge on the ability of a freshly switched in pokemon, even if it has been in previously in the battle.
+
+If the AI has no knowledge on the ability of a pokemon and tries to do something based off the ability of a pokemon, it will blindly guess what ability the pokemon has. As a result, on pokemon with only a single ability it will know what ability the pokemon has as it is aware of the possibilities. For the most part, when the AI gains knowledge of an ability when it is used, as would make sense.
+Intimidate Knowledge Glitch
+
+There are two major exceptions to the above rules, these are Intimidate and Trace. Trace rather than making the AI believe the ability is Trace makes it believe it is the ability copied with Trace. The notable exception with these however is that the AI does not believe the pokemon using the ability is the one with Intimidate or Trace, but rather the player's pokemon is the one with it. In a double battle it is the left pokemon on the player's side. This overrides previous knowledge, causing use of Intimidate or Trace to cause the AI to "forget" about your ability, and works even on pokemon with only a single ability. 
+
+For example, in a single battle if Gengar is out and the AI switches in an Intimidate pokemon then the AI will believe that Gengar has Intimidate instead of Levitate until something happens like a ground move being used on Gengar to cause it to refresh knowledge of Levitate.
+Discouraged Moves
+Certain moves are discouraged when looking at powerful moves, and are treated differently as a result. The moves are as follows.
+●	Exploding Moves (Explosion, Self-Destruct)
+●	Charging Moves (Razor Wind, Sky Attack, Skull Bash, Solar Beam)
+●	HP based moves (Eruption, Water Spout)
+●	Stat lowering moves (Superpower, Overheat, Psycho Boost)
+●	Recharge Moves (Blast Burn, Hydro Cannon, Frenzy Plant, Hyper Beam)
+●	Dream Eater effect
+●	Spit Up effect
+●	Focus Punch effect
+Power 1 Moves
+Some moves are internally implemented as having a power of 1, marking them as not a status move, but still not normal damaging moves. All of these are treated specially for how much damage they deal, and are listed below.
+●	OHKO Moves (Fissure, Horn Drill, Guillotine, Sheer Cold)
+●	Variable Power Moves (Flail, Frustration, Low Kick, Magnitude, Present, Return, Reversal)
+●	Reflecting Moves (Counter, Mirror Coat)
+●	Flat Damage Moves (Dragon Rage, Endeavor, Night Shade, Psywave, Seismic Toss, Sonic Boom, Super Fang)
+●	Bide
+●	Hidden Power
